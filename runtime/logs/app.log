@@ -1,0 +1,2468 @@
+2026-03-01 16:31:19 [127.0.0.1][6][9h88e2a3sgnvjdi6m3926a7u96lprd4h][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::isClient in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('isClient')
+#1 C:\OSPanel\home\sportzal-main\views\layouts\main.php(46): yii\db\BaseActiveRecord->__get('isClient')
+#2 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\home...')
+#3 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\OSPanel\\home...', Array)
+#4 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(428): yii\base\View->renderFile('C:\\OSPanel\\home...', Array, Object(app\controllers\SiteController))
+#5 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(414): yii\base\Controller->renderContent('<div class="sit...')
+#6 C:\OSPanel\home\sportzal-main\controllers\SiteController.php(65): yii\base\Controller->render('index')
+#7 [internal function]: app\controllers\SiteController->actionIndex()
+#8 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#11 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#12 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2026-03-01 16:31:19 [127.0.0.1][6][9h88e2a3sgnvjdi6m3926a7u96lprd4h][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    'PHPSESSID' => '9h88e2a3sgnvjdi6m3926a7u96lprd4h'
+    '_csrf' => '3c629a96a6f68047f3670b92e3e8a3e8e230dd93c9445ba3c550980b704c5a16a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3SHg_lnDS0lXOvQSU2hSyRO9M3jC_jd5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'aaQ_pxq-j_-x7VT7ZfYWHwAAPRw'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '1'
+    'REDIRECT_H2_STREAM_TAG' => '3652-58-1'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaQ_pxq-j_-x7VT7ZfYWHwAAPRw'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '1'
+    'H2_STREAM_TAG' => '3652-58-1'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'bcebfaa516c7df97afb10129d88d036771e21ad7c4c413c4528c14921ad67bb0'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'https://sportzal/gii/crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; PHPSESSID=9h88e2a3sgnvjdi6m3926a7u96lprd4h; _csrf=3c629a96a6f68047f3670b92e3e8a3e8e230dd93c9445ba3c550980b704c5a16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223SHg_lnDS0lXOvQSU2hSyRO9M3jC_jd5%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '58572'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772371879.6257
+    'REQUEST_TIME' => 1772371879
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 16:36:21 [127.0.0.1][6][9h88e2a3sgnvjdi6m3926a7u96lprd4h][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::isClient in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('isClient')
+#1 C:\OSPanel\home\sportzal-main\views\layouts\main.php(46): yii\db\BaseActiveRecord->__get('isClient')
+#2 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\home...')
+#3 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\OSPanel\\home...', Array)
+#4 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(428): yii\base\View->renderFile('C:\\OSPanel\\home...', Array, Object(app\controllers\SiteController))
+#5 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(414): yii\base\Controller->renderContent('<div class="sit...')
+#6 C:\OSPanel\home\sportzal-main\controllers\SiteController.php(65): yii\base\Controller->render('index')
+#7 [internal function]: app\controllers\SiteController->actionIndex()
+#8 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#11 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#12 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2026-03-01 16:36:21 [127.0.0.1][6][9h88e2a3sgnvjdi6m3926a7u96lprd4h][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    'PHPSESSID' => '9h88e2a3sgnvjdi6m3926a7u96lprd4h'
+    '_csrf' => '3c629a96a6f68047f3670b92e3e8a3e8e230dd93c9445ba3c550980b704c5a16a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"3SHg_lnDS0lXOvQSU2hSyRO9M3jC_jd5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'aaRA1Rq-j_-x7VT7ZfYWIQAAPx0'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '1'
+    'REDIRECT_H2_STREAM_TAG' => '3652-62-1'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaRA1Rq-j_-x7VT7ZfYWIQAAPx0'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '1'
+    'H2_STREAM_TAG' => '3652-62-1'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'deed479a1079c0455c83113f2c38cb83109ff41e8f8af02a85bf78232ddaf688'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'https://sportzal/gii/crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; PHPSESSID=9h88e2a3sgnvjdi6m3926a7u96lprd4h; _csrf=3c629a96a6f68047f3670b92e3e8a3e8e230dd93c9445ba3c550980b704c5a16a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%223SHg_lnDS0lXOvQSU2hSyRO9M3jC_jd5%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '51877'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772372181.4351
+    'REQUEST_TIME' => 1772372181
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 18:11:33 [127.0.0.1][3][bt89ubfbg3keajmh7s4loml318g9upr0][error][Error] Error: Class "Html" not found in C:\OSPanel\home\sportzal-main\views\site\index.php:14
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\OSPanel\\home...', Array)
+#2 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\OSPanel\\home...', Array, Object(app\controllers\SiteController))
+#3 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(413): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#4 C:\OSPanel\home\sportzal-main\controllers\SiteController.php(65): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#7 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('index', Array)
+#9 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#10 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2026-03-01 18:11:33 [127.0.0.1][3][bt89ubfbg3keajmh7s4loml318g9upr0][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'bt89ubfbg3keajmh7s4loml318g9upr0'
+    '_identity' => '562162a5dd993d4efcaf2c34c92c0945b562259a1c0d0475af35531368c36249a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE\",2592000]\";}'
+    '_csrf' => '9a9a4ac4c685427c5f944adaeb538695bc03caf126ed24d8540f63012e3e3cb6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Q9hP-d2WlSvtpdK79UWHBMDwNyd20XCi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaRXJRq-j_-x7VT7ZfYWcAAAPRQ'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '1'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-116-1'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaRXJRq-j_-x7VT7ZfYWcAAAPRQ'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '1'
+    'REDIRECT_H2_STREAM_TAG' => '3652-116-1'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaRXJRq-j_-x7VT7ZfYWcAAAPRQ'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'bdfc4936d0f077177dea0fe0945529b6f91b26949009765edc7c0c9310992163'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '1'
+    'H2_STREAM_TAG' => '3652-116-1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'https://sportzal/account/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=bt89ubfbg3keajmh7s4loml318g9upr0; _identity=562162a5dd993d4efcaf2c34c92c0945b562259a1c0d0475af35531368c36249a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE%22%2C2592000%5D%22%3B%7D; _csrf=9a9a4ac4c685427c5f944adaeb538695bc03caf126ed24d8540f63012e3e3cb6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Q9hP-d2WlSvtpdK79UWHBMDwNyd20XCi%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '53442'
+    'REDIRECT_URL' => '/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772377893.3847
+    'REQUEST_TIME' => 1772377893
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 18:38:25 [127.0.0.1][3][pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/boi.png". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/boi.pn...', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-01 18:38:25 [127.0.0.1][3][pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4'
+    '_identity' => '562162a5dd993d4efcaf2c34c92c0945b562259a1c0d0475af35531368c36249a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE\",2592000]\";}'
+    '_csrf' => '1e238bfa09f3364d58d8d4829fd520c5dbb99668cfba74a79629fe6d36fd2eb0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5W_LFnBxCNFjIZIxl1LnvfLcsmU0kwKj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaRdcRq-j_-x7VT7ZfYWzgAAPw4'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '7'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-227-7'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaRdcRq-j_-x7VT7ZfYWzgAAPw4'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '7'
+    'REDIRECT_H2_STREAM_TAG' => '3652-227-7'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaRdcRq-j_-x7VT7ZfYWzgAAPw4'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => '3a6b6de99c343f7c8df3da0b3255856d2dc7f4aae2ebb2353001db3567a31af1'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '7'
+    'H2_STREAM_TAG' => '3652-227-7'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4; _identity=562162a5dd993d4efcaf2c34c92c0945b562259a1c0d0475af35531368c36249a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE%22%2C2592000%5D%22%3B%7D; _csrf=1e238bfa09f3364d58d8d4829fd520c5dbb99668cfba74a79629fe6d36fd2eb0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225W_LFnBxCNFjIZIxl1LnvfLcsmU0kwKj%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '57582'
+    'REDIRECT_URL' => '/web/site/img/boi.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/img/boi.png'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772379505.6514
+    'REQUEST_TIME' => 1772379505
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 18:40:56 [127.0.0.1][3][pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4][error][Error] Error: Undefined constant "backend" in C:\OSPanel\home\sportzal-main\views\site\index.php:25
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\OSPanel\\home...', Array)
+#2 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\OSPanel\\home...', Array, Object(app\controllers\SiteController))
+#3 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(413): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#4 C:\OSPanel\home\sportzal-main\controllers\SiteController.php(65): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#7 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('index', Array)
+#9 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#10 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2026-03-01 18:40:56 [127.0.0.1][3][pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4'
+    '_identity' => '562162a5dd993d4efcaf2c34c92c0945b562259a1c0d0475af35531368c36249a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE\",2592000]\";}'
+    '_csrf' => '1e238bfa09f3364d58d8d4829fd520c5dbb99668cfba74a79629fe6d36fd2eb0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5W_LFnBxCNFjIZIxl1LnvfLcsmU0kwKj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaReCBq-j_-x7VT7ZfYW1AAAPT4'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '1'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-231-1'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaReCBq-j_-x7VT7ZfYW1AAAPT4'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '1'
+    'REDIRECT_H2_STREAM_TAG' => '3652-231-1'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaReCBq-j_-x7VT7ZfYW1AAAPT4'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'dd6ce5a6e0e7799f92458a40ccbdb3351dfa488451b112dbcc134b64cb424d9e'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '1'
+    'H2_STREAM_TAG' => '3652-231-1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'https://sportzal/account/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4; _identity=562162a5dd993d4efcaf2c34c92c0945b562259a1c0d0475af35531368c36249a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE%22%2C2592000%5D%22%3B%7D; _csrf=1e238bfa09f3364d58d8d4829fd520c5dbb99668cfba74a79629fe6d36fd2eb0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225W_LFnBxCNFjIZIxl1LnvfLcsmU0kwKj%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '53773'
+    'REDIRECT_URL' => '/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772379656.6105
+    'REQUEST_TIME' => 1772379656
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 18:41:51 [127.0.0.1][3][pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $model in C:\OSPanel\home\sportzal-main\views\site\index.php:25
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\views\site\index.php(25): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', 'C:\\OSPanel\\home...', 25)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\home...')
+#2 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\OSPanel\\home...', Array)
+#3 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\OSPanel\\home...', Array, Object(app\controllers\SiteController))
+#4 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(413): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#5 C:\OSPanel\home\sportzal-main\controllers\SiteController.php(65): yii\base\Controller->render('index')
+#6 [internal function]: app\controllers\SiteController->actionIndex()
+#7 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#8 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#9 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('index', Array)
+#10 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#11 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2026-03-01 18:41:51 [127.0.0.1][3][pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4'
+    '_identity' => '562162a5dd993d4efcaf2c34c92c0945b562259a1c0d0475af35531368c36249a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE\",2592000]\";}'
+    '_csrf' => '1e238bfa09f3364d58d8d4829fd520c5dbb99668cfba74a79629fe6d36fd2eb0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5W_LFnBxCNFjIZIxl1LnvfLcsmU0kwKj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaRePxq-j_-x7VT7ZfYW1wAAPwQ'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '1'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-235-1'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaRePxq-j_-x7VT7ZfYW1wAAPwQ'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '1'
+    'REDIRECT_H2_STREAM_TAG' => '3652-235-1'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaRePxq-j_-x7VT7ZfYW1wAAPwQ'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'd9437b02cc47304f02bbe11ba50af6b509a3838b2ab6e56d5c3e5cc7dd0b5c38'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '1'
+    'H2_STREAM_TAG' => '3652-235-1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'https://sportzal/account/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4; _identity=562162a5dd993d4efcaf2c34c92c0945b562259a1c0d0475af35531368c36249a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE%22%2C2592000%5D%22%3B%7D; _csrf=1e238bfa09f3364d58d8d4829fd520c5dbb99668cfba74a79629fe6d36fd2eb0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225W_LFnBxCNFjIZIxl1LnvfLcsmU0kwKj%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '62856'
+    'REDIRECT_URL' => '/web/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772379711.4593
+    'REQUEST_TIME' => 1772379711
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 18:42:12 [127.0.0.1][3][pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/<img src= in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php:155
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('<img src=', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/<img src=', Array)
+#2 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-01 18:42:12 [127.0.0.1][3][pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4'
+    '_identity' => '562162a5dd993d4efcaf2c34c92c0945b562259a1c0d0475af35531368c36249a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE\",2592000]\";}'
+    '_csrf' => '1e238bfa09f3364d58d8d4829fd520c5dbb99668cfba74a79629fe6d36fd2eb0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5W_LFnBxCNFjIZIxl1LnvfLcsmU0kwKj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+    '__authKey' => 'sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaReVBq-j_-x7VT7ZfYW2gAAPTU'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '3'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-239-3'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaReVBq-j_-x7VT7ZfYW2gAAPTU'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '3'
+    'REDIRECT_H2_STREAM_TAG' => '3652-239-3'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaReVBq-j_-x7VT7ZfYW2gAAPTU'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => '40b3af616c8864b87b0e655372f63b65034b65213105091a9ecd43b17341b475'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '3'
+    'H2_STREAM_TAG' => '3652-239-3'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=pdhcv7sjq58ll7a4u1ojfu9avqkhj3j4; _identity=562162a5dd993d4efcaf2c34c92c0945b562259a1c0d0475af35531368c36249a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22sip-IL4f4WCqN4Ox3V9rLWkiG1uK4mQE%22%2C2592000%5D%22%3B%7D; _csrf=1e238bfa09f3364d58d8d4829fd520c5dbb99668cfba74a79629fe6d36fd2eb0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225W_LFnBxCNFjIZIxl1LnvfLcsmU0kwKj%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '60024'
+    'REDIRECT_URL' => '/web/site/<img src='
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/%3Cimg%20src='
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772379732.1081
+    'REQUEST_TIME' => 1772379732
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 18:45:49 [127.0.0.1][-][6b409bdr357o2ps6ikie8hpffhip35qd][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "i". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('i', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-01 18:45:49 [127.0.0.1][-][6b409bdr357o2ps6ikie8hpffhip35qd][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '1e238bfa09f3364d58d8d4829fd520c5dbb99668cfba74a79629fe6d36fd2eb0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5W_LFnBxCNFjIZIxl1LnvfLcsmU0kwKj\";}'
+    'PHPSESSID' => '6b409bdr357o2ps6ikie8hpffhip35qd'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaRfLRq-j_-x7VT7ZfYW4gAAPxo'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '9'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-244-9'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaRfLRq-j_-x7VT7ZfYW4gAAPxo'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '9'
+    'REDIRECT_H2_STREAM_TAG' => '3652-244-9'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaRfLRq-j_-x7VT7ZfYW4gAAPxo'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'cb31a0d0c81993573161c4ef2d8e5c3ba4b7eb4da717bfda1529699aa66c6332'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '9'
+    'H2_STREAM_TAG' => '3652-244-9'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf=1e238bfa09f3364d58d8d4829fd520c5dbb99668cfba74a79629fe6d36fd2eb0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225W_LFnBxCNFjIZIxl1LnvfLcsmU0kwKj%22%3B%7D; PHPSESSID=6b409bdr357o2ps6ikie8hpffhip35qd'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '60302'
+    'REDIRECT_URL' => '/web/i'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/i'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772379949.0333
+    'REQUEST_TIME' => 1772379949
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 18:46:01 [127.0.0.1][6][99g07onkadnhl9t6kn0egjadakcp9boe][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "i". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('i', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-01 18:46:00 [127.0.0.1][6][99g07onkadnhl9t6kn0egjadakcp9boe][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '99g07onkadnhl9t6kn0egjadakcp9boe'
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    '_csrf' => '9c31b6fb9afadd23725386187ac0e4484c40f2e57398ab6bc127e56c70eb08c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RqnNF66EMwQFwOzqt2WbM3zGgArpa5VM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaRfOBq-j_-x7VT7ZfYW7AAAPww'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '5'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-248-5'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaRfOBq-j_-x7VT7ZfYW7AAAPww'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '5'
+    'REDIRECT_H2_STREAM_TAG' => '3652-248-5'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaRfOBq-j_-x7VT7ZfYW7AAAPww'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'ed079f17832ae3ccda16fbd114615d2f8d65405ff413e0f876e9d5f87657f836'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '5'
+    'H2_STREAM_TAG' => '3652-248-5'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=99g07onkadnhl9t6kn0egjadakcp9boe; _identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; _csrf=9c31b6fb9afadd23725386187ac0e4484c40f2e57398ab6bc127e56c70eb08c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RqnNF66EMwQFwOzqt2WbM3zGgArpa5VM%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '51466'
+    'REDIRECT_URL' => '/web/i'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/i'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772379960.8482
+    'REQUEST_TIME' => 1772379960
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 18:50:10 [127.0.0.1][6][99g07onkadnhl9t6kn0egjadakcp9boe][error][Error] Error: Class "ZalType" not found in C:\OSPanel\home\sportzal-main\views\admin\view.php:46
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\OSPanel\\home...', Array)
+#2 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\OSPanel\\home...', Array, Object(app\controllers\AdminController))
+#3 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(413): yii\base\View->render('view', Array, Object(app\controllers\AdminController))
+#4 C:\OSPanel\home\sportzal-main\controllers\AdminController.php(58): yii\base\Controller->render('view', Array)
+#5 [internal function]: app\controllers\AdminController->actionView('1')
+#6 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#7 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#8 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('view', Array)
+#9 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/view', Array)
+#10 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2026-03-01 18:50:10 [127.0.0.1][6][99g07onkadnhl9t6kn0egjadakcp9boe][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '99g07onkadnhl9t6kn0egjadakcp9boe'
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    '_csrf' => '9c31b6fb9afadd23725386187ac0e4484c40f2e57398ab6bc127e56c70eb08c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RqnNF66EMwQFwOzqt2WbM3zGgArpa5VM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaRgMhq-j_-x7VT7ZfYW_QAAPyU'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '7'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-266-7'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaRgMhq-j_-x7VT7ZfYW_QAAPyU'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '7'
+    'REDIRECT_H2_STREAM_TAG' => '3652-266-7'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaRgMhq-j_-x7VT7ZfYW_QAAPyU'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'be4519e639ceafd336b08a69969a137fb891a2b3e47d5a873d295bf13d63dc53'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '7'
+    'H2_STREAM_TAG' => '3652-266-7'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'https://sportzal/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=99g07onkadnhl9t6kn0egjadakcp9boe; _identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; _csrf=9c31b6fb9afadd23725386187ac0e4484c40f2e57398ab6bc127e56c70eb08c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RqnNF66EMwQFwOzqt2WbM3zGgArpa5VM%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '56206'
+    'REDIRECT_URL' => '/web/admin/view'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/admin/view?id=1'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772380210.1967
+    'REQUEST_TIME' => 1772380210
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2026-03-01 18:53:54 [127.0.0.1][6][99g07onkadnhl9t6kn0egjadakcp9boe][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "i". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('i', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-01 18:53:54 [127.0.0.1][6][99g07onkadnhl9t6kn0egjadakcp9boe][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '99g07onkadnhl9t6kn0egjadakcp9boe'
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    '_csrf' => '9c31b6fb9afadd23725386187ac0e4484c40f2e57398ab6bc127e56c70eb08c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RqnNF66EMwQFwOzqt2WbM3zGgArpa5VM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaRhEhq-j_-x7VT7ZfYXDgAAPzA'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '3'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-289-3'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaRhEhq-j_-x7VT7ZfYXDgAAPzA'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '3'
+    'REDIRECT_H2_STREAM_TAG' => '3652-289-3'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaRhEhq-j_-x7VT7ZfYXDgAAPzA'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => '5ecde6f05369e75c9f80e886cc750257c0253944bb0c69404b4c24a3181a09de'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '3'
+    'H2_STREAM_TAG' => '3652-289-3'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=99g07onkadnhl9t6kn0egjadakcp9boe; _identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; _csrf=9c31b6fb9afadd23725386187ac0e4484c40f2e57398ab6bc127e56c70eb08c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RqnNF66EMwQFwOzqt2WbM3zGgArpa5VM%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '57353'
+    'REDIRECT_URL' => '/web/i'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/i'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772380434.256
+    'REQUEST_TIME' => 1772380434
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 18:54:46 [127.0.0.1][6][99g07onkadnhl9t6kn0egjadakcp9boe][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "i". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('i', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-01 18:54:46 [127.0.0.1][6][99g07onkadnhl9t6kn0egjadakcp9boe][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '99g07onkadnhl9t6kn0egjadakcp9boe'
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    '_csrf' => '9c31b6fb9afadd23725386187ac0e4484c40f2e57398ab6bc127e56c70eb08c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RqnNF66EMwQFwOzqt2WbM3zGgArpa5VM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaRhRhq-j_-x7VT7ZfYXFAAAPT4'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '7'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-293-7'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaRhRhq-j_-x7VT7ZfYXFAAAPT4'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '7'
+    'REDIRECT_H2_STREAM_TAG' => '3652-293-7'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaRhRhq-j_-x7VT7ZfYXFAAAPT4'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'f38786edc9bbb6e879e4156e730d88f3e510da44a5ad0e9f7467e8f396c5bdd2'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '7'
+    'H2_STREAM_TAG' => '3652-293-7'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=99g07onkadnhl9t6kn0egjadakcp9boe; _identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; _csrf=9c31b6fb9afadd23725386187ac0e4484c40f2e57398ab6bc127e56c70eb08c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RqnNF66EMwQFwOzqt2WbM3zGgArpa5VM%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '50211'
+    'REDIRECT_URL' => '/web/i'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/i'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772380486.7743
+    'REQUEST_TIME' => 1772380486
+    'argv' => []
+    'argc' => 0
+]
+2026-03-01 18:55:10 [127.0.0.1][6][99g07onkadnhl9t6kn0egjadakcp9boe][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "i". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('i', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-01 18:55:10 [127.0.0.1][6][99g07onkadnhl9t6kn0egjadakcp9boe][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '99g07onkadnhl9t6kn0egjadakcp9boe'
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    '_csrf' => '9c31b6fb9afadd23725386187ac0e4484c40f2e57398ab6bc127e56c70eb08c8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RqnNF66EMwQFwOzqt2WbM3zGgArpa5VM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aaRhXRq-j_-x7VT7ZfYXHAAAPx0'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '3'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '3652-297-3'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aaRhXRq-j_-x7VT7ZfYXHAAAPx0'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '3'
+    'REDIRECT_H2_STREAM_TAG' => '3652-297-3'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aaRhXRq-j_-x7VT7ZfYXHAAAPx0'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'e4369d17003024b72beb5959b06926977dcfc25d20bf78fe15dd08ac221ff416'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '3'
+    'H2_STREAM_TAG' => '3652-297-3'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=99g07onkadnhl9t6kn0egjadakcp9boe; _identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; _csrf=9c31b6fb9afadd23725386187ac0e4484c40f2e57398ab6bc127e56c70eb08c8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RqnNF66EMwQFwOzqt2WbM3zGgArpa5VM%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '53104'
+    'REDIRECT_URL' => '/web/i'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/i'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772380509.9728
+    'REQUEST_TIME' => 1772380509
+    'argv' => []
+    'argc' => 0
+]
+2026-03-03 17:14:34 [127.0.0.1][6][cviqn4kf8vce5ivekp0v4to0bilm8hsg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "i". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('i', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-03 17:14:34 [127.0.0.1][6][cviqn4kf8vce5ivekp0v4to0bilm8hsg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    'PHPSESSID' => 'cviqn4kf8vce5ivekp0v4to0bilm8hsg'
+    '_csrf' => '5ae69c98f3816ad9f46428242b44eeac334f1dc4ec1475a11d358ea6f92873f4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bs3hmU2NRWzfEZlJsEeGawEqXJW9i3-5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aabsyk3eFrfApwyHYkDoRgAAPhE'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '7'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '10008-5-7'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aabsyk3eFrfApwyHYkDoRgAAPhE'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '7'
+    'REDIRECT_H2_STREAM_TAG' => '10008-5-7'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aabsyk3eFrfApwyHYkDoRgAAPhE'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => '1174a69ae3676afd519085311d10fde4d3f59613a74edc6b1b5f6e5c7c3a10de'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '7'
+    'H2_STREAM_TAG' => '10008-5-7'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; PHPSESSID=cviqn4kf8vce5ivekp0v4to0bilm8hsg; _csrf=5ae69c98f3816ad9f46428242b44eeac334f1dc4ec1475a11d358ea6f92873f4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bs3hmU2NRWzfEZlJsEeGawEqXJW9i3-5%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '57038'
+    'REDIRECT_URL' => '/web/i'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/i'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772547274.7067
+    'REQUEST_TIME' => 1772547274
+    'argv' => []
+    'argc' => 0
+]
+2026-03-03 17:23:41 [127.0.0.1][6][cviqn4kf8vce5ivekp0v4to0bilm8hsg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/group.png". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/group.png', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-03 17:23:41 [127.0.0.1][6][cviqn4kf8vce5ivekp0v4to0bilm8hsg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    'PHPSESSID' => 'cviqn4kf8vce5ivekp0v4to0bilm8hsg'
+    '_csrf' => '5ae69c98f3816ad9f46428242b44eeac334f1dc4ec1475a11d358ea6f92873f4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bs3hmU2NRWzfEZlJsEeGawEqXJW9i3-5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aabu7U3eFrfApwyHYkDo7wAAPgw'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '7'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '10008-38-7'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aabu7U3eFrfApwyHYkDo7wAAPgw'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '7'
+    'REDIRECT_H2_STREAM_TAG' => '10008-38-7'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aabu7U3eFrfApwyHYkDo7wAAPgw'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'ae35c9b97c428fadeb6706ed129d1aaee101498f24b00a2ebb9947550ecf47d4'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '7'
+    'H2_STREAM_TAG' => '10008-38-7'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; PHPSESSID=cviqn4kf8vce5ivekp0v4to0bilm8hsg; _csrf=5ae69c98f3816ad9f46428242b44eeac334f1dc4ec1475a11d358ea6f92873f4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bs3hmU2NRWzfEZlJsEeGawEqXJW9i3-5%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '64445'
+    'REDIRECT_URL' => '/web/img/group.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/group.png'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772547821.0208
+    'REQUEST_TIME' => 1772547821
+    'argv' => []
+    'argc' => 0
+]
+2026-03-03 17:23:41 [127.0.0.1][6][cviqn4kf8vce5ivekp0v4to0bilm8hsg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/M_heigt.png". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/M_heigt.png', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-03 17:23:41 [127.0.0.1][6][cviqn4kf8vce5ivekp0v4to0bilm8hsg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    'PHPSESSID' => 'cviqn4kf8vce5ivekp0v4to0bilm8hsg'
+    '_csrf' => '5ae69c98f3816ad9f46428242b44eeac334f1dc4ec1475a11d358ea6f92873f4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bs3hmU2NRWzfEZlJsEeGawEqXJW9i3-5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aabu7U3eFrfApwyHYkDo8AAAPhc'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '9'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '10008-38-9'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aabu7U3eFrfApwyHYkDo8AAAPhc'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '9'
+    'REDIRECT_H2_STREAM_TAG' => '10008-38-9'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aabu7U3eFrfApwyHYkDo8AAAPhc'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => 'ae35c9b97c428fadeb6706ed129d1aaee101498f24b00a2ebb9947550ecf47d4'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '9'
+    'H2_STREAM_TAG' => '10008-38-9'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; PHPSESSID=cviqn4kf8vce5ivekp0v4to0bilm8hsg; _csrf=5ae69c98f3816ad9f46428242b44eeac334f1dc4ec1475a11d358ea6f92873f4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bs3hmU2NRWzfEZlJsEeGawEqXJW9i3-5%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '64445'
+    'REDIRECT_URL' => '/web/img/M_heigt.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/M_heigt.png'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772547821.0208
+    'REQUEST_TIME' => 1772547821
+    'argv' => []
+    'argc' => 0
+]
+2026-03-03 17:24:39 [127.0.0.1][6][cviqn4kf8vce5ivekp0v4to0bilm8hsg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/group.png". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/group.png', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-03 17:24:39 [127.0.0.1][6][cviqn4kf8vce5ivekp0v4to0bilm8hsg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    'PHPSESSID' => 'cviqn4kf8vce5ivekp0v4to0bilm8hsg'
+    '_csrf' => '5ae69c98f3816ad9f46428242b44eeac334f1dc4ec1475a11d358ea6f92873f4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bs3hmU2NRWzfEZlJsEeGawEqXJW9i3-5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aabvJ03eFrfApwyHYkDo9AAAPz0'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '3'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '10008-42-3'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aabvJ03eFrfApwyHYkDo9AAAPz0'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '3'
+    'REDIRECT_H2_STREAM_TAG' => '10008-42-3'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aabvJ03eFrfApwyHYkDo9AAAPz0'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => '5c7fb0dcc1ca9f642f4cdf8f7fea3616496ffad40d9a2418f70d0b7a618d7b0d'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '3'
+    'H2_STREAM_TAG' => '10008-42-3'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; PHPSESSID=cviqn4kf8vce5ivekp0v4to0bilm8hsg; _csrf=5ae69c98f3816ad9f46428242b44eeac334f1dc4ec1475a11d358ea6f92873f4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bs3hmU2NRWzfEZlJsEeGawEqXJW9i3-5%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '58672'
+    'REDIRECT_URL' => '/web/img/group.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/group.png'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772547879.7991
+    'REQUEST_TIME' => 1772547879
+    'argv' => []
+    'argc' => 0
+]
+2026-03-03 17:24:58 [127.0.0.1][6][cviqn4kf8vce5ivekp0v4to0bilm8hsg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/group.png". in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/group.png', Array)
+#1 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\home\sportzal-main\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\home\sportzal-main\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-03-03 17:24:58 [127.0.0.1][6][cviqn4kf8vce5ivekp0v4to0bilm8hsg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity' => 'b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs\",2592000]\";}'
+    'PHPSESSID' => 'cviqn4kf8vce5ivekp0v4to0bilm8hsg'
+    '_csrf' => '5ae69c98f3816ad9f46428242b44eeac334f1dc4ec1475a11d358ea6f92873f4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bs3hmU2NRWzfEZlJsEeGawEqXJW9i3-5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 6
+    '__authKey' => '_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_UNIQUE_ID' => 'aabvOk3eFrfApwyHYkDo-QAAPi0'
+    'REDIRECT_REDIRECT_HTTPS' => 'on'
+    'REDIRECT_REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_REDIRECT_HTTP2' => 'on'
+    'REDIRECT_REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_REDIRECT_H2_STREAM_ID' => '3'
+    'REDIRECT_REDIRECT_H2_STREAM_TAG' => '10008-46-3'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_UNIQUE_ID' => 'aabvOk3eFrfApwyHYkDo-QAAPi0'
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_SSL_TLS_SNI' => 'sportzal'
+    'REDIRECT_HTTP2' => 'on'
+    'REDIRECT_H2PUSH' => 'off'
+    'REDIRECT_H2_PUSH' => 'off'
+    'REDIRECT_H2_PUSHED' => ''
+    'REDIRECT_H2_PUSHED_ON' => ''
+    'REDIRECT_H2_STREAM_ID' => '3'
+    'REDIRECT_H2_STREAM_TAG' => '10008-46-3'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'aabvOk3eFrfApwyHYkDo-QAAPi0'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'sportzal'
+    'SSL_SERVER_S_DN_CN' => 'sportzal'
+    'SSL_SERVER_I_DN_Email' => 'root@ospanel.local'
+    'SSL_SERVER_I_DN_C' => 'EU'
+    'SSL_SERVER_I_DN_ST' => 'Local Network'
+    'SSL_SERVER_I_DN_O' => 'Open Server Panel'
+    'SSL_SERVER_I_DN_CN' => 'Open Server Panel'
+    'SSL_SERVER_SAN_DNS_0' => 'sportzal'
+    'SSL_SERVER_SAN_DNS_1' => 'www.sportzal'
+    'SSL_VERSION_INTERFACE' => 'mod_ssl/2.4.63'
+    'SSL_VERSION_LIBRARY' => 'OpenSSL/3.3.2'
+    'SSL_PROTOCOL' => 'TLSv1.3'
+    'SSL_SECURE_RENEG' => 'false'
+    'SSL_COMPRESS_METHOD' => 'NULL'
+    'SSL_CIPHER' => 'TLS_AES_128_GCM_SHA256'
+    'SSL_CIPHER_EXPORT' => 'false'
+    'SSL_CIPHER_USEKEYSIZE' => '128'
+    'SSL_CIPHER_ALGKEYSIZE' => '128'
+    'SSL_CLIENT_VERIFY' => 'NONE'
+    'SSL_SERVER_M_VERSION' => '3'
+    'SSL_SERVER_M_SERIAL' => '0D4F955981C1CC49E21318C66E110761B01E2BA6'
+    'SSL_SERVER_V_START' => 'Feb 24 13:43:49 2026 GMT'
+    'SSL_SERVER_V_END' => 'Feb 22 13:43:49 2036 GMT'
+    'SSL_SERVER_S_DN' => 'CN=sportzal'
+    'SSL_SERVER_I_DN' => 'CN=Open Server Panel,O=Open Server Panel,ST=Local Network,C=EU,emailAddress=root@ospanel.local'
+    'SSL_SERVER_A_KEY' => 'id-ecPublicKey'
+    'SSL_SERVER_A_SIG' => 'ecdsa-with-SHA256'
+    'SSL_SESSION_ID' => '534a4875b467f59561d1f2cb9cedec1bbf5ce53bfb57eb55f2ed1cf4c77a8593'
+    'SSL_SESSION_RESUMED' => 'Initial'
+    'HTTP2' => 'on'
+    'H2PUSH' => 'off'
+    'H2_PUSH' => 'off'
+    'H2_PUSHED' => ''
+    'H2_PUSHED_ON' => ''
+    'H2_STREAM_ID' => '3'
+    'H2_STREAM_TAG' => '10008-46-3'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"142\", \"YaBrowser\";v=\"25.12\", \"Not_A Brand\";v=\"99\", \"Yowser\";v=\"2.5\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'https://sportzal/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=b0ec77a38fe8e53f28ff6d583bad71914fe93c88755e6c806e02b1df64516270a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22_euOv_ephQJEbfLKd0VYUWrMcuYMQvGs%22%2C2592000%5D%22%3B%7D; PHPSESSID=cviqn4kf8vce5ivekp0v4to0bilm8hsg; _csrf=5ae69c98f3816ad9f46428242b44eeac334f1dc4ec1475a11d358ea6f92873f4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bs3hmU2NRWzfEZlJsEeGawEqXJW9i3-5%22%3B%7D'
+    'HTTP_PRIORITY' => 'u=2, i'
+    'HTTP_HOST' => 'sportzal'
+    'PATH' => 'C:\\OSPanel\\bin;C:\\OSPanel\\addons\\Blackfire-2.28;C:\\OSPanel\\addons\\FFMpeg-7.1;C:\\OSPanel\\addons\\Ghostscript-10.05\\bin;C:\\OSPanel\\addons\\ImageMagick-7.1;C:\\OSPanel\\addons\\Libwebp-1.5;C:\\OSPanel\\addons\\Perl-5.32\\perl\\site\\bin;C:\\OSPanel\\addons\\Perl-5.32\\perl\\bin;C:\\OSPanel\\addons\\Perl-5.32\\c\\bin;C:\\OSPanel\\modules\\PHP-8.3\\Apache\\bin;C:\\OSPanel\\modules\\PHP-8.3\\PHP;C:\\OSPanel\\data\\PHP-8.3\\default\\composer\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'sportzal'
+    'SERVER_ADDR' => '127.127.126.45'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/home/sportzal-main'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/home/sportzal-main/web/index.php'
+    'REMOTE_PORT' => '60051'
+    'REDIRECT_URL' => '/web/img/group.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/2.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/group.png'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1772547898.7976
+    'REQUEST_TIME' => 1772547898
+    'argv' => []
+    'argc' => 0
+]
